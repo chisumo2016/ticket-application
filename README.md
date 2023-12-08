@@ -11,7 +11,7 @@
     1: Tickets 
             - title (string)   { required}
             - description (text) { required}
-            - status(open {default}, resolved , rejected) , 
+            - status(open {default}, resolved , rejected) , Laravel level
             - attachments(string) { nullable}
             - user_id { required} filled by  laravel
             - status_changed_id { nullable}
@@ -22,3 +22,8 @@
             - ticket_id { required} filled by  laravel
     3: 
         
+# HELP TICKET PROJECT CREATE MIGRATION MODEL CONTROLLER 
+    - Migration 
+            pa make:model Ticket -mrR     
+    https://laravel.com/docs/10.x/migrations#columns
+    https://laravel.com/docs/10.x/migrations#foreign-key-constraints
