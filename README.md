@@ -27,3 +27,7 @@
             pa make:model Ticket -mrR     
     https://laravel.com/docs/10.x/migrations#columns
     https://laravel.com/docs/10.x/migrations#foreign-key-constraints
+
+# HELP TICKET PROJECT RESOURCE ROUTE
+     - Create route   
+        https://laravel.com/docs/10.x/controllers#resource-controllers
