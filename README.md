@@ -31,3 +31,5 @@
 # HELP TICKET PROJECT RESOURCE ROUTE
      - Create route   
         https://laravel.com/docs/10.x/controllers#resource-controllers
+
+# HELP TICKET PROJECT CREATE TICKET

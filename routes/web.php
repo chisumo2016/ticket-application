@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::middleware('auth')->prefix('ticket')->group(function (){
+Route::middleware('auth')->prefix('ticket')->name('ticket.')->group(function (){
     Route::resource('/', TicketController::class);
 });
 
