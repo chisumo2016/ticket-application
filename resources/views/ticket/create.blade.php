@@ -5,6 +5,7 @@
 
             <form method="POST" action="{{ route('ticket.store') }}" enctype="multipart/form-data">
                 @csrf
+
                 <!-- Email Address -->
                 <div class="mt-4">
                     <x-input-label for="title" :value="__('Title')" />

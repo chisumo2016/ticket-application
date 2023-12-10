@@ -33,3 +33,22 @@
         https://laravel.com/docs/10.x/controllers#resource-controllers
 
 # HELP TICKET PROJECT CREATE TICKET
+    - Create a commponent UI via cli
+         php artisan make:component Textarea        
+         php artisan make:component file-input
+
+#  HELP TICKET PROJECT STORE TICKET WITH FILE 
+    - Which route gonna submit
+    - rule
+            https://laravel.com/docs/10.x/validation#rule-file
+    - Add the mass assgment in Ticket Model
+    - ERROR
+        SQLSTATE[HY000]: General error: 1364 Field 'user_id' doesn't have a default value
+    - SOLN
+        'user_id' => auth()->id()
+    - Many ways to refactor 
+            $ticket  = Ticket::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'user_id' => auth()->id()
+        ]);
