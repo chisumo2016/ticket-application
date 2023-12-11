@@ -77,5 +77,7 @@
 
 # HELP TICKET PROJECT DELETE MODEL
     Add the button 
+    Add  the form to delete 
+    Add logic 
 # HELP TICKET PROJECT - EDIT AND UPDATE
     
