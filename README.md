@@ -71,3 +71,6 @@
     - Show single ticket
         <a href="{{ route('ticket.show') }}"></a>
         Missing required parameter for [Route: ticket.show] [URI: ticket/{}] [Missing parameter: ].
+
+# HELP TICKET PROJECT ROUTE MODEL BINDING
+        https://laravel.com/docs/10.x/folio#route-model-binding
