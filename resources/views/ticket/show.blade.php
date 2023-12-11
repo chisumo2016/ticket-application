@@ -10,6 +10,17 @@
                     @endif
                 </div>
 
+            <div class="flex">
+                <x-primary-button >Edit</x-primary-button>
+
+                <form action="{{ route('ticket.destroy', $ticket->id) }}" method="post" class="ml-2">
+                    @csrf
+                    @method('delete')
+                    <x-primary-button >Delete</x-primary-button>
+                </form>
+
+            </div>
+
         </div>
     </div>
 </x-app-layout>

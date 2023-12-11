@@ -74,3 +74,8 @@
 
 # HELP TICKET PROJECT ROUTE MODEL BINDING
         https://laravel.com/docs/10.x/folio#route-model-binding
+
+# HELP TICKET PROJECT DELETE MODEL
+    Add the button 
+# HELP TICKET PROJECT - EDIT AND UPDATE
+    
