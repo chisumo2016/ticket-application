@@ -52,3 +52,22 @@
             'description' => $request->description,
             'user_id' => auth()->id()
         ]);
+
+# HELP TTICKET PROJECT PASS VIEW VARIABLE
+    - Display all tickets onn index page 
+    - Various way to data on the view
+        1: 
+        $tickets = Ticket::all();
+        return view('ticket.index')->with('tickets', $tickets);
+        
+        2:
+
+        $tickets = Ticket::all();
+        return view('ticket.index', ['tickets' => $tickets]);
+
+        3:
+        $tickets = Ticket::all();
+        return view('ticket.index', compact('tickets'));
+    - Show single ticket
+        <a href="{{ route('ticket.show') }}"></a>
+        Missing required parameter for [Route: ticket.show] [URI: ticket/{}] [Missing parameter: ].
