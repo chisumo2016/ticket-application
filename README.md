@@ -1,7 +1,7 @@
 #### Project Idea
 
     1: User can create a new help ticket 
-    2: Admin cann reply on help ticket
+    2: Admin AND user can reply on help ticket
     3: Admin can reject or resolve the ticket
     4: When admin update on the ticket then user will get one notification via email that ticket statusis updated
     5: User cab give ticket title and description
@@ -100,4 +100,10 @@
     Update the status of tthe  ticket
     Ticket MModel
     We need the Approve and Reject to be for admin only
-    
+
+# HELP TICKET PROJECT - LARAVEL NOTIFICATION
+    - Trigger notofication in  update method
+        https://laravel.com/docs/10.x/notifications#main-content
+    - php artisan make:notification TicketUpdattedNotification  
+    - Various channnel to send the notification
+    https://laravel.com/docs/10.x/notifications#mail-notifications
