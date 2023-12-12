@@ -94,3 +94,10 @@
         $user = User::whereEmail('bchisumo@yahoo.com)->first
         $user->isAdmin
     - Approve or Reject button
+
+# HELP TICKET PROJECT - REQUEST EXCEPT RULE IN
+    In approve and reject button , we should have two forms
+    Update the status of tthe  ticket
+    Ticket MModel
+    We need the Approve and Reject to be for admin only
+    

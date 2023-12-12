@@ -13,6 +13,7 @@ class Ticket extends Model
         'title',
         'description',
         'attachment',
-        'user_id'
+        'user_id',
+        'status'
     ];
 }
