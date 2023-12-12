@@ -80,4 +80,17 @@
     Add  the form to delete 
     Add logic 
 # HELP TICKET PROJECT - EDIT AND UPDATE
-    
+    - Create a new ui called edit
+    - Create button for edit in show ui
+    - Create a logic inside the TicketConntroller
+    - Add logic inside the UpdateRequest
+    - Apply DRY 
+
+# HELP TICKET PROJECT - ADMIN ACCESSOR
+    - Work on admin section 
+    - how do u define is_admin
+    - we can create a simple accessor  in our user moodel
+        tinnker
+        $user = User::whereEmail('bchisumo@yahoo.com)->first
+        $user->isAdmin
+    - Approve or Reject button

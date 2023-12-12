@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use function Pest\Laravel\get;
 
 class User extends Authenticatable
 {
@@ -42,4 +43,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+   protected  function isAdmin(): Attribute
+   {
+       $admins = ['bchisumo74@hotmmaiil.com'];
+
+       return  Attribute::make(
+           get: fn() => in_array($this->email, $admins)
+       );
+   }
 }

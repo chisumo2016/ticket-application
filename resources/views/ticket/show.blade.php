@@ -10,16 +10,24 @@
                     @endif
                 </div>
 
-            <div class="flex">
-                <a href="{{ route('ticket.edit', $ticket->id) }}">
-                    <x-primary-button>Edit</x-primary-button>
-                </a>
+            <div class="flex justify-between">
+                <div class="flex">
+                    <a href="{{ route('ticket.edit', $ticket->id) }}">
+                        <x-primary-button>Edit</x-primary-button>
+                    </a>
 
-                <form action="{{ route('ticket.destroy', $ticket->id) }}" method="post" class="ml-2">
-                    @csrf
-                    @method('delete')
-                    <x-primary-button >Delete</x-primary-button>
-                </form>
+                    <form action="{{ route('ticket.destroy', $ticket->id) }}" method="post" class="ml-2">
+                        @csrf
+                        @method('delete')
+                        <x-primary-button >Delete</x-primary-button>
+                    </form>
+                </div>
+                <div class="flex">
+                    <x-primary-button >Approve</x-primary-button>
+                    <x-primary-button class="ml-2">Reject</x-primary-button>
+
+
+                </div>
 
             </div>
 
