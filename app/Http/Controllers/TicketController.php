@@ -17,7 +17,9 @@ class TicketController extends Controller
      */
     public function index()
     {
-        $tickets = Ticket::all();
+        //$tickets = Ticket::all();
+        $user = auth()->user();
+        $tickets= $user->isAdmin ? Ticket::latest()->get() : $user->tickets;
         return view('ticket.index', compact('tickets'));
     }
 
@@ -88,10 +90,10 @@ class TicketController extends Controller
 
         if ($request->has('status')){
             //notificcation
-            $user = User::find($ticket->user_id);
+             //$user = User::find($ticket->user_id);
             // $user->notify(new TicketUpdattedNotification($ticket));
-
-            return (new TicketUpdattedNotification($ticket))->toMail($user);
+            //return (new TicketUpdattedNotification($ticket))->toMail($user);
+             $ticket->user->notify(new TicketUpdattedNotification($ticket));
         }
 
         if ($request->file('attachment')){

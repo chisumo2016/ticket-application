@@ -107,3 +107,8 @@
     - php artisan make:notification TicketUpdattedNotification  
     - Various channnel to send the notification
     https://laravel.com/docs/10.x/notifications#mail-notifications
+
+# HELP TICKET PROJECT - HAS MANY RELATIONSHIP
+    - Open the .env
+    - we can use mail trap / Beyond code
+        https://laravel.com/docs/10.x/eloquent-relationships#main-content
